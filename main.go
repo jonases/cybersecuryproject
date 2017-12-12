@@ -82,7 +82,7 @@ func initSessionStore() {
 			Path:     "/",
 			Domain:   "",
 			MaxAge:   86400,
-			Secure:   false,
+			Secure:   true,
 			HttpOnly: true,
 		},
 	}
