@@ -11,11 +11,9 @@ install:
   - go get github.com/josephspurrier/csrfbanana
   - go get github.com/timjacobi/go-couchdb
   - go get golang.org/x/crypto/bcrypt
-  
 
 script:
   - export GOPATH=$HOME/gopath/src/github.com/jonases/cybersecuryproject:$GOPATH
   - go test -v
   #- cd src && gas ../main.go models/* handlers/* db/* utils/*
-  - gas main.go models/* handlers/* db/* utils/*
-
+  - gas main.go src/models/* src/handlers/* src/db/* src/utils/*
