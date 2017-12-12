@@ -25,7 +25,7 @@ func TestInitSetup(t *testing.T) {
 	models.UsersDB += "_test"
 	models.MessagesDB += "_test"
 	// set the base path
-	models.Path = ""
+	models.Path = "src/"
 	// set up the logging output standard
 	log.SetFlags(log.LstdFlags | log.Lmicroseconds | log.Lshortfile)
 }
