@@ -16,6 +16,8 @@ Edit `main.go`, and set `Secure` flag session cookie to `false`
 
 then ...
 
-1. `go build`
+ `go build`
 
-2. `./cybersecuryproject`
+ `./cybersecuryproject`
+
+Access `http://localhost:8001`
