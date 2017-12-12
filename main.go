@@ -1,17 +1,16 @@
 package main
 
 import (
+	"db"
 	"encoding/gob"
+	"handlers"
 	"log"
+	"models"
 	"net/http"
 	"os"
 	"path/filepath"
 	"time"
-
-	"github.com/jonases/cybersecuryproject/db"
-	"github.com/jonases/cybersecuryproject/handlers"
-	"github.com/jonases/cybersecuryproject/models"
-	"github.com/jonases/cybersecuryproject/utils"
+	"utils"
 
 	"github.com/gorilla/mux"
 	"github.com/gorilla/sessions"
@@ -36,7 +35,7 @@ func main() {
 	}
 
 	// returns the path, excluding the file name
-	models.Path = filepath.Dir(ex) + "/"
+	models.Path = filepath.Dir(ex) + "/src/"
 
 	// set up the routes for the HTTP handle
 	router := mux.NewRouter()

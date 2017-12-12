@@ -1,15 +1,14 @@
 package main
 
 import (
+	"db"
+	"handlers"
 	"log"
+	"models"
 	"net/http"
 	"net/http/httptest"
 	"strings"
 	"testing"
-
-	"github.com/jonases/cybersecuryproject/db"
-	"github.com/jonases/cybersecuryproject/handlers"
-	"github.com/jonases/cybersecuryproject/models"
 )
 
 var (
