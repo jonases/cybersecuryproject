@@ -16,6 +16,7 @@ func ServeResource(res http.ResponseWriter, req *http.Request) {
 	// return method not allowed if attempt to use a method different than GET
 	if req.Method != http.MethodGet {
 		res.WriteHeader(http.StatusMethodNotAllowed)
+		return
 	}
 
 	path := models.Path + models.Public + "static" + req.URL.Path
